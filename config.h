@@ -65,11 +65,12 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *gtalock[]  = { "gtalock", NULL };
 static const char *lightup[]   = { "light", "-A", "5" };
 static const char *lightdown[]   = { "light", "-U", "5" };
-static const char *killer[]   = { "killer", NULL };
+//static const char *killer[]   = { "killer", NULL };
 static const char *playsong[]   = { "play_song", NULL };
 static const char *newlook[]   = { "newlook", NULL };
 static const char *confedit[]   = { "confedit", NULL };
 static const char *dmisc[]   = { "dmisc", NULL };
+static const char *screenshot[]   = { "screen", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -103,11 +104,12 @@ static Key keys[] = {
 	{ MODKEY,			XK_Escape, spawn,	   {.v = gtalock} },
 	{ MODKEY,			XK_Up,     spawn,	   {.v = lightup} },
 	{ MODKEY,			XK_Down,   spawn,	   {.v = lightdown} },
-	{ MODKEY,			XK_x,	   spawn,	   {.v = killer} },
+	//{ MODKEY,			XK_x,	   spawn,	   {.v = killer} },
 	{ MODKEY,			XK_p,	   spawn,	   {.v = playsong} },
 	{ MODKEY,			XK_n,	   spawn,	   {.v = newlook} },
 	{ MODKEY|ShiftMask,			XK_c,	   spawn,	   {.v = confedit} },
 	{ MODKEY,			XK_m,	   spawn,	   {.v = dmisc} },
+	{ MODKEY|ShiftMask,			XK_s,	   spawn,	   {.v = screenshot} },
 	TAGKEYS(                        XK_ampersand,              0)
 	TAGKEYS(                        XK_eacute,                 1)
 	TAGKEYS(                        XK_quotedbl,               2)
